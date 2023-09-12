@@ -2409,6 +2409,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		
 	}
 
 		.icon:before {
@@ -2418,7 +2419,7 @@ input, select, textarea {
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
-			line-height: 1;
+			
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
@@ -2448,7 +2449,7 @@ input, select, textarea {
 			display: block;
 			height: 2.75rem;
 			line-height: 2.75rem;
-			margin: 0 auto 2.75rem auto;
+			margin: 0 auto calc(0.25rem + 0.5vw) auto;
 			text-align: center;
 			width: 2.75rem;
 		}
@@ -2488,9 +2489,9 @@ input, select, textarea {
 				}
 
 				.icon.alt.major:after {
-					height: 5rem;
-					width: 5rem;
-					margin: -2.5rem 0 0 -2.5rem;
+					height: 4rem;
+					width: 4rem;;
+					margin: -2.0rem 0 0 -2.0rem;
 				}
 
 /* Image */
@@ -4191,7 +4192,7 @@ input, select, textarea {
 			transform: translate(50%, -50%);
 			border-radius: 3px 0 0 3px;
 		}
-		
+		/*
 		@media screen and (max-width: 1920px) {
 
 			.video-container {
@@ -4201,7 +4202,7 @@ input, select, textarea {
 			.slideshow-container {
 				max-width: 60%;
 			}
-		}
+		}*/
 		
 		/* Hide the images by default */
 		.mySlides {
@@ -4394,6 +4395,11 @@ input, select, textarea {
 			text-align: justify;
 		}
 
+		.project-description h3 { 
+			margin: 0 0 0 0;
+			font-size: 1.3rem;
+		}
+
 		.project-details-table { 
 			table-layout: auto; 
 			width: 60%;
@@ -4529,4 +4535,71 @@ input, select, textarea {
 		}
 
 		
+/* Skills */
+.skill-name { 
+    color: var(--color-text);
+
+    font-size: calc(14pt + 0.4vw);
+    font-weight: 600;
+	margin: 0;
+
+}
+
+.skill-description { 
+    color: var(--color-text);
+    text-align: justify;
+	margin: 0;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(0.25rem + 0.5vw);
+    text-align: center;
+
+    padding: calc(0.2rem + 1vw) calc(1rem + 1vw);
+	padding-left:0;
+    border-bottom: 3px solid var(--color-secondary);
+	
+}
+
+.skill-header  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 20%;
+}
+
+.skill-icon {
+    color: var(--color-highlight);
+    margin-bottom: calc(0.25rem + 0.5vw);
+	margin-top: calc(0.25rem + 0.5vw);
+
+    font-size: calc(32pt + 0.4vw);
+	
+
+}
+
+
+.skill:last-child {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 900px) {
+    .skill {
+        flex-wrap: wrap; 
+		padding: calc(1rem + 1vw);
+    }
+}
+
 		

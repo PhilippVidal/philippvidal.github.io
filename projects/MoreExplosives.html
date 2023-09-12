@@ -85,21 +85,57 @@
 						<!--<p>
 							Sed egestas, ante et vulputate volutpat semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida est. Sed lectus. Praesent elementum hendrerit tortor.
 						</p>-->
-						
-						<p class="project-description">
-							This mod adds multiple new types of explosives with their associated triggers and detonators to the game DayZ, acting as an extendable framework that other modders can build upon. 
-							Furthermore, it extends the game's base raiding system to provide players and server owners with an immersive and more customizable experience. 
-							While this mod is similar to my other mod <a href="/projects/Breachingcharge.html" target="_blank" style="text-decoration: none;">Breachingcharge</a>, 
-							it offers far more options to adapt the mod to a specific in-game economy, works with other mods without requiring further scripting, has cleaner and more importantly better performing code, 
-							and enables engaging gameplay scenarios outside of just base raiding.
-							<br><br>
-							DayZ is primarily a multiplayer game and therefore the mod had to be designed with proper networking in mind. 
-							While a lot of the heavy lifting when it comes to this is already handled by the game itself, 
-							quite a few of the mod's mechanics had to implement custom solutions to enable efficient networking. 
-							These solutions range from something straightforward like syncing the timer of a timed-explosive, 
-							to a state-based synchronization system for transfering an explosive's connected detonators between 
-							server and client while only sending the necessary data. 
-						</p>
+						<div class="project-description">
+							<p>	
+								<i>More Explosives</i> is a mod for the game DayZ that adds a customizable explosive and base raiding framework to the game. 
+								Players can use this mod's explosives in a variety of ways, ranging from breaking into another player's base or setting up an ambush during PVP, 
+								all the way to using them as a distraction for zombies while looting an abandoned military outpost.   
+								The explosives themselves can be placed on structures, freely attached to dynamic objects and surfaces (e.g., vehicles) 
+								or even hidden inside an inventory as a little surprise for an unsuspecting player. 
+								Additionally, they can be fitted with several different types of triggers, 
+								including configurable timers and remote receivers that can be connected to multiple detonators at once. 
+								<br><br>
+
+								While this mod has similar use-cases in comparison to my other DayZ mod <i><a href="/projects/Breachingcharge.html" target="_blank" style="text-decoration: none;">Breachingcharge</a></i>, 
+								it offers far greater adaptability to specific in-game economies, 
+								is more compatible with other mods, 
+								offers engaging gameplay scenarios outside of just base raiding, 
+								and most importantly, has cleaner, better-performing code that is easily extendable. 
+							</p>
+							<h3>What was my role?</h3>
+							<p>					
+								As the main developer I've worked on all aspects of the mod, be it writing and structuring the code, creating fitting, 
+								functional 3D models or providing extensive documentation for users and other modders. 
+								Some of the most notable features include: 
+								<br><br>
+
+								<b>Custom Networking:</b> 
+								Since DayZ is primarily a multiplayer game, a big focus of the mod was the implementation of efficient networking solutions.
+								These solutions range from something straightforward like syncing the timer of an explosive, 
+								to a state-based synchronization system for replicating an explosive's connected detonators while only sending the bare minimum amount of data. 
+								<br><br>
+
+								<b>Integration into existing systems:</b> 
+								In order to make the mod work with other mods right out of the gate, it hooks into the base game's systems 
+								and builds on top of them to allow for greater customizability. 
+								This means that server owners are offered a familiar way to adjust the mod's behaviour and items using a custom config file, 
+								but also that compatibility with other mods is ensured without the need for further scripting.
+								<br><br>
+
+								<b>Extendability:</b> 
+								Since this mod also acts as a framework that other modders can build upon, it was created with extendability in mind. 
+								Most of the mod's systems and mechanics can easily be modified, extended or replaced with custom variants, 
+								allowing things like custom damage and destruction systems to be implemented 
+								or alternative explosives, triggers and crafting items to be introduced. 
+								<br><br>
+
+								<b>Custom 3D Models:</b> 
+								All models for the mod have been created from scratch to fit the aesthetics of the game and preserve the player's immersion.  
+								To achieve this, a high- to low-poly workflow in Blender 
+								and Substance Painter has been used to make the various items look convincing and fit into the game world.
+								<br><br>
+							</p>
+						</div>
 					</header>
 					<section id="one" class="wrapper style1" style="padding: 0;">
 						<div class="inner">
